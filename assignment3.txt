@@ -1,0 +1,59 @@
+1. Why are functions advantageous to have in your programs?
+Function is a block of code which is used to perform a task specified as a part of the function body. 
+If we want to perform a task for N number of times, it is not a good practice to write the same piece of code N times.
+Instead we can put those particular lines of code in a function block and then call the function N number of times.
+This will optimize the space consumed by the program and the code looks clean
+
+2. When does the code in a function run: when it's specified or when it's called?
+There are two aspects of a function, 1 is function definition and the function call.
+Function definition is creating the function and defining it's operation.
+Function call is calling the function whenever we would like the task to be executed.
+A function must be called when we want the code in the function body to be executed.
+
+3. What statement creates a function?
+def function_name(parameters):
+	body
+	body
+	
+def is an inbuilt keyword which is used to define functions, and parameters are not mandatory depending on what we write in the body.
+
+4. What is the difference between a function and a function call?
+Function is a collection of lines of code which is executed when it is called via a function call.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+There is only one global scope in python. Variables declared inside functions act as local variables which means they are only limited
+to the scope of that one function. If the variable is to be used outside of the function too, then it has to be declared as global variable.
+But if the variable is created in the main body of the python, it is also global variable.
+We can not declare a variable global and assign it a value in the same line. First it has to be declared global and then assigned value in the next line.
+But if you want to change the value of a variable declared outside the function to another value inside the function, you again have to declare it as global value. Then the value of the variable will be changed in whole python scope.
+
+6. What happens to variables in a local scope when the function call returns?
+The variables are destroyed once the function call is returned.
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+return is a keyword in python which is used to return the values of the expressions in the function body. Once the return statement is encountered, then the function stops execution.
+If a function does not have return keyword, it will return Null value.
+Yes, we can have return value in an expression. 
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+If a function does not have return keyword, it will return Null value.
+
+9. How do you make a function variable refer to the global variable?
+Any variable created in function body is local variable. If that variable has to be used outside of the function, we have to create a gloabl scope of the variable. This can be done with the help of "global" keyword.
+
+10. What is the data type of None?
+None by itself is a datatype. None is a datype of itself (NoneType)
+
+11. What does the sentence import areallyourpetsnamederic do?
+This statement imports the module named areallyourpetsnamederic
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+spam.beacon()
+
+13. What can you do to save a programme from crashing if it encounters an error?
+By handling the errors
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+Whenever we are not sure if the code is error free or not, we put that in try clause. 
+If there is an exception in the try block, then the code in the except block will be executed.
+
